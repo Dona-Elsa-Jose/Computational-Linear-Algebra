@@ -1,7 +1,21 @@
 ## Pseudocode for linear algebra
 
+The following `pseudocode` shows how to solve a syetem of linear equations.
 
 ```python
+FUNCTION solution(A,b):
+  Create the Augmented matrix: K=[A|b]
+  Reduce in row reduced Echelon form
+  Rank = number of non zero rows of RREF
+  if rank(K) != rank(A):
+    print( system is inconsistent)
+  ELSEIF
+      solve using back substitution
+END FUNCTION
+  
+  
+ 
+ 
 ```
 
 
